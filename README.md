@@ -4,7 +4,7 @@ This is Grevillea, a no-database web-app for sharing events!
 
 Free ⋆ Open-Source ⋆ Non-Profit ⋆ Platform-Agnostic ⋆ Human-Crafted ⋆ Artist-First ⋆ Private ⋆ Sustainable ⋆ Distributed ⋆ Accessible ⋆ Inclusive
 
-[Check out an example and the full details here!](https://grevillea.au/#1;Example+Event;42+Wallaby+Way,+Sydney;20261015;1900;20261016;0000;;;;;snail-comic2026053051;This+is+Grevillea,+an+independent+tool+for+sharing+community+events+online~21~0A~0AFree+%E2%8B%86+Open-Source+%E2%8B%86+Non-Profit+%E2%8B%86+Platform-Agnostic~0AHuman-Crafted+%E2%8B%86+Artist-First+%E2%8B%86+Private+%E2%8B%86+Sustainable~0ADistributed+%E2%8B%86+Accessible+%E2%8B%86+Inclusive)
+[Check out an example and the full FAQ here!](https://grevillea.au/#1;Example+Event;42+Wallaby+Way,+Sydney;20261015;1900;20261016;0000;;;;;snail-comic2026053051;This+is+Grevillea,+an+independent+tool+for+sharing+community+events+online~21~0A~0AFree+%E2%8B%86+Open-Source+%E2%8B%86+Non-Profit+%E2%8B%86+Platform-Agnostic~0AHuman-Crafted+%E2%8B%86+Artist-First+%E2%8B%86+Private+%E2%8B%86+Sustainable~0ADistributed+%E2%8B%86+Accessible+%E2%8B%86+Inclusive)
 
 Full website: [grevillea.au](https://grevillea.au)
 
