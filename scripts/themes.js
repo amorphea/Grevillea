@@ -99,6 +99,7 @@ class ThemesDB {
     ThemesDB.#logEntry(75, '2026-01-01', 'handmade-paper', null, ['Creepster', 'https://fonts.googleapis.com/css2?family=Creepster&display=swap']),
     ThemesDB.#logEntry(76, '2026-01-01', 'preview-snail-comic', ['images/001-033 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 16% 15% 16% 15%;'], null),
     ThemesDB.#logEntry(77, '2026-01-01', 'preview-snail-comic', ['images/001-034 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: white; padding: 16% 15% 16% 15%;'], null),
+    ThemesDB.#logEntry(104,'2026-01-01', 'preview-snail-comic', ['images/001-034 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: white; padding: 16% 15% 16% 15%; --theme-title-color: #FF44C0; --theme-location-color: #59DBFF; --theme-datetime-color: #C6FF7C; --theme-timezone-color: #D85BFF; --theme-rsvp-color: #5EFFB6; --theme-description-color: #FFC851;'], null),
     ThemesDB.#logEntry(78, '2026-01-01', 'preview-snail-comic', ['images/001-035 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #EDE3E9; padding: 18% 18% 18% 18%;'], null),
     ThemesDB.#logEntry(79, '2026-01-01', 'preview-snail-comic', ['images/001-036 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #336860; padding: 17% 17% 17% 17%;'], null),
     ThemesDB.#logEntry(80, '2026-01-01', 'preview-snail-comic', ['images/001-037 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 20% 19% 20% 19%;'], null),
@@ -121,7 +122,16 @@ class ThemesDB {
     ThemesDB.#logEntry(101, '2026-01-01', 'preview-flower-pressings', null, ['Style Script', 'https://fonts.googleapis.com/css2?family=Style+Script&display=swap']),
     ThemesDB.#logEntry(102, '2026-01-01', 'preview-flower-pressings', null, ['Unkempt', 'https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap']),
     ThemesDB.#logEntry(103, '2026-01-01', 'preview-flower-pressings', null, ['Mystery Quest', 'https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap']),
-    // Next number: 104
+    ThemesDB.#logEntry(105, '2026-01-01', 'preview-snail-comic', ['images/001-042 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #000000; padding: 13% 5% 28% 5%;'], null),
+    ThemesDB.#logEntry(106, '2026-01-01', 'preview-snail-comic', ['images/001-043 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #4F3551; padding: 13% 5% 28% 5%; --theme-title-color: #4F3551; --theme-metadata-color: #754243; --theme-description-color: #4F3542;'], null),
+    ThemesDB.#logEntry(107, '2026-01-01', 'preview-snail-comic', ['images/001-044 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #FFFFFF; padding: 13% 5% 28% 5%;'], null),
+    ThemesDB.#logEntry(108, '2026-01-01', 'preview-snail-comic', ['images/001-044 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #EFC2E7; padding: 13% 5% 28% 5%; --theme-title-color: #FFFFFF; --theme-metadata-color: #fda8ce; --theme-description-color: #EFC2E7;'], null),
+    ThemesDB.#logEntry(109, '2026-01-01', 'preview-snail-comic', ['images/001-045 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #FFFFFF; padding: 13% 5% 28% 5%;'], null),
+    ThemesDB.#logEntry(110, '2026-01-01', 'preview-snail-comic', ['images/001-046 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #90E2BE; padding: 13% 5% 28% 5%;'], null),
+    ThemesDB.#logEntry(111, '2026-01-01', 'preview-snail-comic', ['images/001-046 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #90E2BE; padding: 13% 5% 28% 5%; --theme-title-color: #5ec8f2; --theme-location-color: #a3fb82; --theme-datetime-color: #8db2aa; --theme-timezone-color: #a5dba1; --theme-rsvp-color: #85cbd3;'], null),
+    ThemesDB.#logEntry(112, '2026-01-01', 'preview-snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: transparent; padding: 13% 5% 28% 5%; --theme-gradient-default-color: #FF1C7A; --theme-gradient: linear-gradient(in hsl 125deg, #FF7C51 0%, #FF7C51 10%, #2286E8 10%, #2286E8 20%, #FF1C7A 20%, #FF1C7A 30%, #B2E559 30%, #B2E559 40%, #FF7C51 40%, #FF7C51 50%, #2286E8 50%, #2286E8 60%, #FF1C7A 60%, #FF1C7A 70%, #B2E559 70%, #B2E559 80%, #FF7C51 80%, #FF7C51 90%, #2286E8 90%, #2286E8 100%);'], null),
+    ThemesDB.#logEntry(113, '2026-01-01', 'preview-snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #FFFFFF; padding: 13% 5% 28% 5%;'], null),
+    // Next number: 114
   ];
 
   static #possibleThemes = null;

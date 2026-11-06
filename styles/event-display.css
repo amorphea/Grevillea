@@ -73,6 +73,8 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 	padding: 3%;
 	color: var(--theme-color);
 	text-shadow: var(--theme-shadow);
+	background-image: var(--theme-gradient, initial);
+	background-clip: text;
 }
 .event-square-inner > * {
 	display: flex;
@@ -92,9 +94,14 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 	font-weight: bold;
 	line-height: 1.2;
 	font-size: 2em;
+	color: var(--theme-title-color, inherit);
+}
+.event-square-inner .location {
+	color: var(--theme-location-color, var(--theme-metadata-color, inherit));
 }
 .event-square-inner .date-and-time {
 	column-gap: 1.4em;
+	color: var(--theme-datetime-color, var(--theme-metadata-color, inherit));
 }
 /* Add bullets between date and time entries.
  * Based on https://stackoverflow.com/a/31220698.
@@ -105,7 +112,7 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 .event-square-inner .date-and-time .bullet-before:before {
 	content: "";
 	position: absolute;
-	background-color: var(--theme-color);
+	background-color: var(--theme-gradient-default-color, var(--theme-datetime-color, var(--theme-metadata-color, var(--theme-color))));
 	box-shadow: var(--theme-shadow);
 	border-radius: 1em;
 	width: 0.3em;
@@ -119,19 +126,21 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 }
 .event-square-inner .timezone {
 	font-size: 0.8em;
+	color: var(--theme-timezone-color, var(--theme-metadata-color, inherit));
 }
 .event-square-inner .rsvp {
-	
+	color: var(--theme-rsvp-color, var(--theme-metadata-color, inherit));
 }
 .event-square-inner .description {
 	margin-top: 0.7em;
+	color: var(--theme-description-color, var(--theme-metadata-color, inherit));
 }
 .event-square-inner .description p + p {
 	margin-top: 0.7em;
 }
 .event-square-inner a {
 	color: inherit;
-	border-bottom: 1px solid var(--theme-color);
+	border-bottom: 1px solid var(--theme-description-color, var(--theme-metadata-color, var(--theme-color)));
 	padding-bottom: 1px; /* when a <code> block is used inside a link, this makes them display more nicely together */
 }
 .event-square-inner a:visited {
@@ -139,7 +148,7 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 }
 .event-square-inner a:hover {
 	color: inherit;
-	border-bottom: 2px solid var(--theme-color);
+	border-bottom: 2px solid var(--theme-description-color, var(--theme-metadata-color, var(--theme-color)));
 }
 .event-square-inner code {
 	background-color: rgba(170, 170, 170, 0.8);
