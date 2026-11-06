@@ -94,7 +94,7 @@ const app = Vue.createApp({
       if (!bgSeed) return "";
       if (!fontSeed) return "";
       if (!/\d\d\d\d-\d\d-\d\d/.test(bgSeed)) return "";
-      if (!/^[a-zA-Z\-]+$/.test(theme)) return "";
+      if (!/^[a-zA-Z\-\~]+$/.test(theme)) return "";
       if (!ValidationUtils.isNumber(fontSeed)) return "";
       return theme.toLowerCase() + this.formatDate(bgSeed) + fontSeed;
     },
