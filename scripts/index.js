@@ -212,7 +212,7 @@ const app = Vue.createApp({
       );
     },
     parseEventArr_v1(arr) {
-      const themeMatch = arr[11] && arr[11].match(/^(?<theme>[a-zA-Z\-]+)(?<bgSeed>\d\d\d\d\d\d\d\d)(?<fontSeed>\d+)?$/);
+      const themeMatch = arr[11] && arr[11].match(/^(?<theme>[a-zA-Z\-\~]+)(?<bgSeed>\d\d\d\d\d\d\d\d)(?<fontSeed>\d+)?$/);
       const theme = themeMatch && themeMatch.groups.theme?.toLowerCase();
       const bgSeed = (themeMatch && themeMatch.groups.bgSeed) ? this.parseDate(themeMatch.groups.bgSeed) : DateUtils.getTodaysDateString();
       const fontSeed = (themeMatch && themeMatch.groups.fontSeed) ? new Number(themeMatch.groups.fontSeed) : 1;
