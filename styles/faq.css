@@ -20,6 +20,9 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 .section-faq {
 	padding-inline: 13px;
 }
+.section-faq h6 {
+  text-wrap: auto;
+}
 .section-faq p,
 .section-faq ul,
 .section-faq ol,

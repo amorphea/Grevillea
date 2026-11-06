@@ -271,7 +271,7 @@
 					<div class="section-collapse">
 						<h6>Can I trust this event? <span class="emoji">⚠</span></h6>
 						<p>
-							It's as trustworthy as the person/page who sent it to you. Anyone can easily make a
+							This event is as trustworthy as the person/page who sent it to you. Anyone can easily make a
 							fake event, or edit the details of an existing event before forwarding it. Make sure you trust
 							the person who sent you this event.
 						</p>
@@ -307,7 +307,7 @@
 								</tr>
 								<tr>
 									<th>Human-Crafted</th>
-									<td>Artificial Intelligence isn't used for software development, writing, artwork, or anything else.</td>
+									<td>Artificial Intelligence isn't used for artwork, software development, writing, or anything else.</td>
 								</tr>
 								<tr>
 									<th>Artist-First</th>
@@ -386,13 +386,6 @@
 							This site doesn't even have a database; there's no data to store! Nor are there cookies,
 							tracking, ads, or anything else.
 						</p>
-						<p>
-							Note: This means the links can be quite long! Grevillea is designed to keep the links as
-							short as possible, but you should keep your event description brief too. This is also why
-							you can't upload your own images (though you can provide a URL instead), why the theme
-							selection works the way it does, and so on -- it's all designed to keep the links as short
-							as possible.
-						</p>
 						<h6 v-if="urlHost == 'grevillea.au'">Does GitHub store my data?</h6>
 						<p v-if="urlHost == 'grevillea.au'">
 							Yes. This instance of Grevillea is currently hosted on GitHub Pages, and GitHub
@@ -407,12 +400,13 @@
 						</p>
 						<h6>Could the event-organiser store my data?</h6>
 						<p>
-							Potentially, in some cases they could see your IP address and device type. When an event
-							is published with a custom image, this image is loaded by your browser from a website
-							specified by the event organiser. This website will receive your IP address, and may be
-							able to detect what browser and/or device you're using (nerdy details: it can see this data
-							by inspecting the user-agent string in the HTTP GET request, but it can't use cookies or
-							other more advanced tracking technologies).
+							Potentially, in some cases they could see your IP address and device type. Events can be
+							published either with an existing image from a theme here on Grevillea, or with a custom
+							image from the organiser's website. When someone uses a custom image, your browser will
+							load the image from their website, and so their website may be able to see your IP address
+							and see what browser/device you're using (nerdy details: it can see this data by reading
+							the user-agent string in a HTTP GET request. This is all the info it can see! It can't use
+							cookies/etc).
 						</p>
 						<p>
 							TL;DR -- it's safer than opening a random website, but still make sure you trust whoever's
@@ -437,10 +431,11 @@
 							Yes! Go ahead, just be mindful that anyone could forward the link to new people ╰(*°▽°*)╯
 						</p>
 						<h6>
-							Can I add <i>formatting</i> and <span style="color:#9B5DE5">c</span>
-							<span style="color:#EF43AA">o</span><span style="color:#F5743D">l</span>
-							<span style="color:#F4D301">o</span><span style="color:#9FC332">u</span>
-							<span style="color:#00E0C2">r</span><span style="color:#519FFF">s</span> to my event?
+							Can I add <i>formatting</i>, <a href="https://en.wikipedia.org/wiki/Hypertext">links</a> and
+							<span style="color:#9B5DE5">c</span><span style="color:#EF43AA">o</span>
+							<span style="color:#F5743D">l</span><span style="color:#F4D301">o</span>
+							<span style="color:#9FC332">u</span><span style="color:#00E0C2">r</span>
+							<span style="color:#519FFF">s</span> to my event?
 						</h6>
 						<p>
 							Yes! Grevillea uses some simple <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>-style
@@ -462,7 +457,11 @@
 						<p>
 							For colour palette ideas see e.g. <a href="https://www.shecodes.io/palettes">shecodes.io</a> or <a href="https://coolors.co/generate">coolors.io</a> :))
 						</p>
-						<h6 ref="urlsFaq">How can I make my link shorter? Why did someone send me a link in Chinese?</h6>
+						<h6 ref="urlsFaq">How can I make my link shorter? Why did someone send me a link that looks Chinese?</h6>
+						<p>
+							The easiest way: Use a URL shortener of your choice! If that's no good for your use-case,
+							then read on...
+						</p>
 						<p>
 							When sharing an event, you can share either a 'plaintext' or 'condensed' link. Both contain
 							exactly the same event details.
@@ -478,15 +477,14 @@
 							example, Bluesky has a 300 character limit (as of 2026); some platforms
 							might only allow ASCII links (not Unicode characters); and so on.
 						</p>
-						<p>
-							You're also welcome to paste the link into a URL shortener on another site (depending on
-							the site, you may need to make an account/etc first).
-						</p>
 						<h6 ref="themesFaq">How do I select a background image and font?</h6>
 						<p>
-							You can use a random pre-made background image, or host one on your own website and then paste the
-							URL :)
+							There's two approaches:
 						</p>
+						<ol>
+							<li>Use a pre-made background from a theme here on Grevillea</li>
+							<li>Use an image hosted on your own website, by pasting the URL</li>
+						</ol>
 						<p>
 							Either way, choose a theme from the dropdown. Depending on which theme you choose, different fonts
 							and background images will be available. These are both randomly selected based on two 'seed' values.
