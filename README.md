@@ -2,15 +2,15 @@
 
 An event sharing utility, designed to be independent of any social media platform, while maximising privacy.
 
-Full website: [amorphea.github.io/v](https://amorphea.github.io/v/)
+Full website: [grevillea.au](https://grevillea.au)
 
 ## Example events
 
-[Example 1](https://amorphea.github.io/v#1;Fake+party+next+weekend;1+Mystery+Street,+Mile+Start,+Adelaide+SA;20260718;2000;20260718;2355;Australia/Adelaide;IG~3A+@fakeaccount;20260715;;nature202606192;BYO+drinks,+I'll+bring+food,+~2B1s+welcome+just+lmk~21) \
-[Example 2](https://amorphea.github.io/v#1;Test+event;Location+TBA;20260404;1630;20260406;1630;Australia/Hobart;organiser.address@example.com;;;nature202606014;Lorem+ipsum+dolor+sit+amet,+consectetur+adipiscing+elit.+Ut+faucibus+odio+vitae+venenatis+euismod.+Fusce+consequat+tincidunt+interdum.+In+facilisis+dapibus+diam,+sed+facilisis+tellus+placerat+sed.+Pellentesque+mauris+erat,+scelerisque+non+ante+et,+semper+efficitur+mi.+Interdum+et+malesuada+fames+ac+ante+ipsum+primis+in+faucibus.+Maecenas+nec+tellus+vel+lacus+facilisis+dignissim+sed+nec+odio.) •
-[Example 2b](https://amorphea.github.io/v#俸夈Ѐ丆炍圌佮擱焄編囎嬺筼宔姓刹伂備乃嶠侌欶瀈孄咤囇婾夕岤媉优誸哸峋棽威夭坮喖偋则閿涮仿凃豾嫚嗥喏尾鷎屷孺攞变壊奺嗶枽坭咯吮壬圾勜岟岃痒孼倩奛堬嚴垌嫫姉豾埩哧孥垡墸嶊寄士訍逥俉亚籓稆噶剝孙凚捬撓巠吮儩傾煇媽塰嬱仢剪光墈元姛吼尝嗰婍寬鵈倍劒屦企奖仏場峸哛噈嬪傮团嫫寓咫孀农嶘外礥再吢嚕孢苧始且厭仟濑呟勭嗙唸威儋妽尅裆夒丶箧叝埁媴厓哨乕奱剻新匊叐噶勁罪俙僶尻宪奖奕噽壿抦巁伦垣嚌岓凧囐卅嬯亯鰺筵孷塇容咷巪呿唯傠氁庀Ѐ) \
-[Example 3](https://amorphea.github.io/v#1;Test+event;Location+TBA;20260402;1630;;;;organiser.address@example.com;;;;Lorem+ipsum+dolor+sit+amet,+consectetur+adipiscing+elit.+Ut+faucibus+odio+vitae+venenatis+euismod.) •
-[Example 3b](https://amorphea.github.io/v#橻錥髴磥鮥馴糌駣陴顯覫錂繻檰檶樴樲泱殳樻л七駲韡馩髥誮除露靳髀靸陭騬蝮雯襻л七鄯骥襫顰髵襫霯餯誫髩謫陭靴椫雯馳靣鬥鬵誫除顰顳雩馧磥餩謮磕謫鞡魣顢魳磯霩觫鮩鬡蝫鮥馥馡鬩諫靵顳饯蜮)
+[Example 1](https://grevillea.au/#1;Fake+party+next+weekend;1+Mystery+Street,+Mile+Start,+Adelaide+SA;20260718;2000;20260718;2355;Australia/Adelaide;IG~3A+@fakeaccount;20260715;;nature202606192;BYO+drinks,+I'll+bring+food,+~2B1s+welcome+just+lmk~21) \
+[Example 2](https://grevillea.au/#1;Test+event;Location+TBA;20260404;1630;20260406;1630;Australia/Hobart;organiser.address@example.com;;;nature202606014;Lorem+ipsum+dolor+sit+amet,+consectetur+adipiscing+elit.+Ut+faucibus+odio+vitae+venenatis+euismod.+Fusce+consequat+tincidunt+interdum.+In+facilisis+dapibus+diam,+sed+facilisis+tellus+placerat+sed.+Pellentesque+mauris+erat,+scelerisque+non+ante+et,+semper+efficitur+mi.+Interdum+et+malesuada+fames+ac+ante+ipsum+primis+in+faucibus.+Maecenas+nec+tellus+vel+lacus+facilisis+dignissim+sed+nec+odio.) •
+[Example 2b](https://grevillea.au/#俸夈Ѐ丆炍圌佮擱焄編囎嬺筼宔姓刹伂備乃嶠侌欶瀈孄咤囇婾夕岤媉优誸哸峋棽威夭坮喖偋则閿涮仿凃豾嫚嗥喏尾鷎屷孺攞变壊奺嗶枽坭咯吮壬圾勜岟岃痒孼倩奛堬嚴垌嫫姉豾埩哧孥垡墸嶊寄士訍逥俉亚籓稆噶剝孙凚捬撓巠吮儩傾煇媽塰嬱仢剪光墈元姛吼尝嗰婍寬鵈倍劒屦企奖仏場峸哛噈嬪傮团嫫寓咫孀农嶘外礥再吢嚕孢苧始且厭仟濑呟勭嗙唸威儋妽尅裆夒丶箧叝埁媴厓哨乕奱剻新匊叐噶勁罪俙僶尻宪奖奕噽壿抦巁伦垣嚌岓凧囐卅嬯亯鰺筵孷塇容咷巪呿唯傠氁庀Ѐ) \
+[Example 3](https://grevillea.au/#1;Test+event;Location+TBA;20260402;1630;;;;organiser.address@example.com;;;;Lorem+ipsum+dolor+sit+amet,+consectetur+adipiscing+elit.+Ut+faucibus+odio+vitae+venenatis+euismod.) •
+[Example 3b](https://grevillea.au/#橻錥髴磥鮥馴糌駣陴顯覫錂繻檰檶樴樲泱殳樻л七駲韡馩髥誮除露靳髀靸陭騬蝮雯襻л七鄯骥襫顰髵襫霯餯誫髩謫陭靴椫雯馳靣鬥鬵誫除顰顳雩馧磥餩謮磕謫鞡魣顢魳磯霩觫鮩鬡蝫鮥馥馡鬩諫靵顳饯蜮)
 
 ## Contribution guide
 
