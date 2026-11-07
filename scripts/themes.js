@@ -69,9 +69,16 @@ class ThemesDB {
     ThemesDB.#logEntry(43, '2026-01-01', 'countryside', null, ['Quintessential', 'https://fonts.googleapis.com/css2?family=Quintessential&display=swap']),
     ThemesDB.#logEntry(44, '2026-01-01', 'countryside', null, ['Jim Nightshade', 'https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap', 1.2]),
     ThemesDB.#logEntry(46, '2026-01-01', 'countryside', null, ['Handlee', 'https://fonts.googleapis.com/css2?family=Handlee&display=swap']),
-    ThemesDB.#logEntry(37, '2026-01-01', '~preview-seaside', ['images/001-019 amorphea-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 7% 5% 30% 5%;'], null),
-    ThemesDB.#logEntry(38, '2026-01-01', '~preview-seaside', null, ['Felipa', 'https://fonts.googleapis.com/css2?family=Felipa&display=swap']),
-    ThemesDB.#logEntry(32, '2026-01-01', '~preview-seaside', null, ['Indie Flower', 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap']),
+    ThemesDB.#logEntry(37, '2026-01-01', '~preview-ocean', ['images/001-019 amorphea-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 7% 5% 30% 5%;'], null),
+    ThemesDB.#logEntry(114, '2026-01-01', '~preview-ocean', ['images/001-048 amorphea-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 7% 5% 35% 5%;'], null),
+    ThemesDB.#logEntry(115, '2026-01-01', '~preview-ocean', ['images/001-049 amorphea-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 7% 5% 42% 5%;'], null),
+    ThemesDB.#logEntry(38, '2026-01-01', '~preview-ocean', null, ['Felipa', 'https://fonts.googleapis.com/css2?family=Felipa&display=swap']),
+    ThemesDB.#logEntry(32, '2026-01-01', '~preview-ocean', null, ['Indie Flower', 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap']),
+    ThemesDB.#logEntry(116, '2026-01-01', '~preview-ocean', null, ['Mystery Quest', 'https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap']),
+    ThemesDB.#logEntry(117, '2026-01-01', '~preview-ocean', null, ['Unkempt', 'https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap']),
+    ThemesDB.#logEntry(118, '2026-01-01', '~preview-ocean', null, ['Style Script', 'https://fonts.googleapis.com/css2?family=Style+Script&display=swap', 1.2]),
+    ThemesDB.#logEntry(119, '2026-01-01', '~preview-ocean', null, ['PT Serif', 'https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap']),
+    ThemesDB.#logEntry(120, '2026-01-01', '~preview-ocean', null, ['Livvic', 'https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,700;1,400;1,700&display=swap']),
     ThemesDB.#logEntry(51, '2026-01-01', 'handmade-paper', ['images/001-025 Noelle~20J~20Gardiner-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #492611; padding: 8% 8% 8% 8%;'], null),
     ThemesDB.#logEntry(52, '2026-01-01', 'handmade-paper', ['images/001-026 Noelle~20J~20Gardiner-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 8% 8% 8% 8%;'], null),
     ThemesDB.#logEntry(53, '2026-01-01', 'handmade-paper', ['images/001-027 Noelle~20J~20Gardiner-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 8% 8% 8% 8%;'], null),
@@ -131,7 +138,7 @@ class ThemesDB {
     ThemesDB.#logEntry(111, '2026-01-01', 'snail-comic', ['images/001-046 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #90E2BE; padding: 13% 5% 28% 5%; --theme-title-color: #5ec8f2; --theme-location-color: #a3fb82; --theme-datetime-color: #8db2aa; --theme-timezone-color: #a5dba1; --theme-rsvp-color: #85cbd3;'], null),
     ThemesDB.#logEntry(112, '2026-01-01', 'snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: transparent; padding: 13% 5% 28% 5%; --theme-gradient-default-color: #FF1C7A; --theme-gradient: linear-gradient(in hsl 125deg, #FF7C51 0%, #FF7C51 10%, #2286E8 10%, #2286E8 20%, #FF1C7A 20%, #FF1C7A 30%, #B2E559 30%, #B2E559 40%, #FF7C51 40%, #FF7C51 50%, #2286E8 50%, #2286E8 60%, #FF1C7A 60%, #FF1C7A 70%, #B2E559 70%, #B2E559 80%, #FF7C51 80%, #FF7C51 90%, #2286E8 90%, #2286E8 100%);'], null),
     ThemesDB.#logEntry(113, '2026-01-01', 'snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #FFFFFF; padding: 13% 5% 28% 5%;'], null),
-    // Next number: 114
+    // Next number: 121
   ];
 
   static #possibleThemes = null;
