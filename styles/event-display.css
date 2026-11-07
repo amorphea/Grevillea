@@ -156,6 +156,8 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 	color: inherit;
 	border-radius: 3px;
 	font-family: 'Courier Prime', 'Courier New', monospace;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
 }
 
 .section-image-credit {
