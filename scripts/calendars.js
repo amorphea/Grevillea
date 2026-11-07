@@ -134,8 +134,8 @@ const calendarButtonsComponent = {
           let container = ctx.clone.getElementsByClassName("event-square-inner")[0];
           if (!container) return;
           
-          container.querySelectorAll(".location div, .date-and-time div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.97em");
-          container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.94em");
+          container.querySelectorAll(".location div, .date-and-time div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.95em");
+          container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.90em");
           
           // Alternative option:
           //
