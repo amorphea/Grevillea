@@ -123,53 +123,37 @@ const calendarButtonsComponent = {
       
       let fileName = this.imageFileName;
       
+      // When exporting a JPEG, sometimes the text wraps onto a newline incorrectly, and overlaps with the text below
+      // To fix this, we use a hacky workaround: Shrink the text slightly during the JPEG export process
+      // Normal font sizes don't work well inside the clone used by SnapDOM, and methods like getComputedStyle()
+      // also don't work, so we end up setting font sizes manually on specific classes. It's hacky and awkward.
+      // There's an alternative approach below, but it's also hacky, and I don't know which is more likely to break.
+      let fixTextWrappingPlugin = {
+        name: 'fix-text-wrapping',
+        afterClone(ctx) {
+          let container = ctx.clone.getElementsByClassName("event-square-inner")[0];
+          if (!container) return;
+          
+          container.querySelectorAll(".location div, .date-and-time div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.99em");
+          container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.98em");
+          
+          // Alternative option:
+          //
+          // We could instead recursively loop through the DOM tree inside .event-square-inner
+          // and replace every text node with a span that uses a smaller font size, as follows:
+          //
+          // let span = document.createElement("span");
+          // span.style.fontSize = "0.99em";
+          // span.innerText = textNode.textContent;
+          // textNode.replaceWith(span);
+        },
+      };
+      
       snapdom( // take screenshot of event square
         eventSquare, {
           width: 1080,
-          reconcile: false,
-          plugins: [
-            {
-              name: 'fix-text-wrapping',
-              afterClone(ctx) {
-                // Runs after cloning + style inlining. ctx.clone is the cloned DOM tree.
-                // This is the most common hook — modify the clone here.
-                // let fontSizeElement = ctx.clone.getElementsByClassName("event-square-inner")[0];
-                // if (!fontSizeElement) return;
-                // let fontSize = Number.parseFloat(fontSizeElement.style.fontSize);
-                // fontSizeElement.style.fontSize = Math.round(fontSize * 0.7 * 100) / 100 + "px";
-                // fontSizeElement.style.fontSize;
-                // fontSizeElement.style.paddingTop = "200px";
-                // debugger;
-                
-                let container = ctx.clone.getElementsByClassName("event-square-inner")[0];
-                if (!container) return;
-                //for (const el of container.getElementsByTagName("*")) {
-                //for (const el of container.children) {
-                for (let el of container.querySelectorAll(".title, .location div, .date-and-time div, .rsvp div, .description p")) {
-                  //let style = getComputedStyle(el);
-                  //let size = Number.parseFloat(style.fontSize);
-                  //el.style.fontSize = Math.round(size * 0.7 * 100) / 100 + "px";
-                  el.style.fontSize = "0.95em";
-                  //el.style.marginLeft = "-0.5em";
-                  //el.style.marginRight = "-0.5em";
-                }
-                
-                container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.98em");
-                
-                // Alternative option:
-                //
-                // We could recursively loop through the DOM tree inside .event-square-inner and replace every
-                // text node with a span as follows:
-                //
-                // let span = document.createElement("span");
-                // span.style.fontSize = "0.99em";
-                // span.innerText = textNode.textContent;
-                // textNode.replaceWith(span);
-                //
-                // Both seem hacky, I don't know which is more likely to break
-              },
-            }
-          ]
+          reconcile: true,
+          plugins: [ fixTextWrappingPlugin ]
         }
       ).then(
         result => result.toJpeg() // convert screenshot to a JPEG
