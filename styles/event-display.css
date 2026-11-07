@@ -151,13 +151,14 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 	border-bottom: 2px solid var(--theme-description-color, var(--theme-metadata-color, var(--theme-color)));
 }
 .event-square-inner code {
-	background-color: rgba(170, 170, 170, 0.8);
+	background-color: rgba(170, 170, 170, 0.4);
 	padding: 0.2em 0.5em 0.2em 0.5em;
 	color: inherit;
 	border-radius: 3px;
 	font-family: 'Courier Prime', 'Courier New', monospace;
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
+	backdrop-filter: blur(10px) contrast(1.3) saturate(2);
 }
 
 .section-image-credit {
