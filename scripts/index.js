@@ -388,6 +388,7 @@ const app = Vue.createApp({
     eventSquareInnerStyle() {
       return (
         (this.themeAppearance?.font ? "font-family: '" + this.themeAppearance.font.name + "';" : "") +
+        (this.themeAppearance?.font ? "font-size: " + this.themeAppearance.font.size + "em;" : "") +
         (this.themeAppearance?.image ? this.themeAppearance.image.textStyling : "")
       );
     },

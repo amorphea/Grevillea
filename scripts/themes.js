@@ -67,7 +67,7 @@ class ThemesDB {
     ThemesDB.#logEntry(32, '2026-01-01', 'countryside', null, ['Indie Flower', 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap']),
     ThemesDB.#logEntry(33, '2026-01-01', 'countryside', null, ['Cormorant', 'https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&display=swap']),
     ThemesDB.#logEntry(43, '2026-01-01', 'countryside', null, ['Quintessential', 'https://fonts.googleapis.com/css2?family=Quintessential&display=swap']),
-    ThemesDB.#logEntry(44, '2026-01-01', 'countryside', null, ['Jim Nightshade', 'https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap']),
+    ThemesDB.#logEntry(44, '2026-01-01', 'countryside', null, ['Jim Nightshade', 'https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap', 1.2]),
     ThemesDB.#logEntry(46, '2026-01-01', 'countryside', null, ['Handlee', 'https://fonts.googleapis.com/css2?family=Handlee&display=swap']),
     ThemesDB.#logEntry(37, '2026-01-01', '~preview-seaside', ['images/001-019 amorphea-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: black; padding: 7% 5% 30% 5%;'], null),
     ThemesDB.#logEntry(38, '2026-01-01', '~preview-seaside', null, ['Felipa', 'https://fonts.googleapis.com/css2?family=Felipa&display=swap']),
@@ -84,11 +84,11 @@ class ThemesDB {
     ThemesDB.#logEntry(60, '2026-01-01', 'handmade-paper', null, ['Cabin Sketch', 'https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap']),
     ThemesDB.#logEntry(61, '2026-01-01', 'handmade-paper', null, ['Handlee', 'https://fonts.googleapis.com/css2?family=Handlee&display=swap']),
     ThemesDB.#logEntry(62, '2026-01-01', 'handmade-paper', null, ['Cormorant', 'https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&display=swap']),
-    ThemesDB.#logEntry(63, '2026-01-01', 'handmade-paper', null, ['Jim Nightshade', 'https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap']),
+    ThemesDB.#logEntry(63, '2026-01-01', 'handmade-paper', null, ['Jim Nightshade', 'https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap', 1.2]),
     ThemesDB.#logEntry(64, '2026-01-01', 'handmade-paper', null, ['Felipa', 'https://fonts.googleapis.com/css2?family=Felipa&display=swap']),
     ThemesDB.#logEntry(65, '2026-01-01', 'handmade-paper', null, ['Courgette', 'https://fonts.googleapis.com/css2?family=Courgette&display=swap']),
-    ThemesDB.#logEntry(66, '2026-01-01', 'handmade-paper', null, ['Cookie', 'https://fonts.googleapis.com/css2?family=Cookie&display=swap']),
-    ThemesDB.#logEntry(67, '2026-01-01', 'handmade-paper', null, ['Style Script', 'https://fonts.googleapis.com/css2?family=Style+Script&display=swap']),
+    ThemesDB.#logEntry(66, '2026-01-01', 'handmade-paper', null, ['Cookie', 'https://fonts.googleapis.com/css2?family=Cookie&display=swap', 1.2]),
+    ThemesDB.#logEntry(67, '2026-01-01', 'handmade-paper', null, ['Style Script', 'https://fonts.googleapis.com/css2?family=Style+Script&display=swap', 1.1]),
     ThemesDB.#logEntry(68, '2026-01-01', 'handmade-paper', null, ['Lobster', 'https://fonts.googleapis.com/css2?family=Lobster&display=swap']),
     ThemesDB.#logEntry(69, '2026-01-01', 'handmade-paper', null, ['Courier Prime', 'https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap']),
     ThemesDB.#logEntry(70, '2026-01-01', 'handmade-paper', null, ['Doto', 'https://fonts.googleapis.com/css2?family=Doto:wght,ROND@900,100&display=swap']),
@@ -119,7 +119,7 @@ class ThemesDB {
     ThemesDB.#logEntry(94, '2026-01-01', 'snail-comic', null, ['Unkempt', 'https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap']),
     ThemesDB.#logEntry(99, '2026-01-01', '~preview-flower-pressings', ['images/001-041 Sarah~20R.-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #6c3a22; padding: 5% 18% 13% 18%;'], null),
     ThemesDB.#logEntry(100, '2026-01-01', '~preview-flower-pressings', null, ['Indie Flower', 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap']),
-    ThemesDB.#logEntry(101, '2026-01-01', '~preview-flower-pressings', null, ['Style Script', 'https://fonts.googleapis.com/css2?family=Style+Script&display=swap']),
+    ThemesDB.#logEntry(101, '2026-01-01', '~preview-flower-pressings', null, ['Style Script', 'https://fonts.googleapis.com/css2?family=Style+Script&display=swap', 1.2]),
     ThemesDB.#logEntry(102, '2026-01-01', '~preview-flower-pressings', null, ['Unkempt', 'https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap']),
     ThemesDB.#logEntry(103, '2026-01-01', '~preview-flower-pressings', null, ['Mystery Quest', 'https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap']),
     ThemesDB.#logEntry(105, '2026-01-01', 'snail-comic', ['images/001-042 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #000000; padding: 13% 5% 28% 5%;'], null),
@@ -142,7 +142,7 @@ class ThemesDB {
       date: new Date(date),
       name: name,
       image: image ? { url: image[0], textStyling: image[1] } : null,
-      font: font ? { name: font[0], url: font[1] } : null
+      font: font ? { name: font[0], url: font[1], size: font[2] || 1 } : null
     };
   }
   
