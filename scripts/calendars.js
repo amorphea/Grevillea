@@ -134,7 +134,8 @@ const calendarButtonsComponent = {
           let container = ctx.clone.getElementsByClassName("event-square-inner")[0];
           if (!container) return;
           
-          container.querySelectorAll(".location div, .date-and-time div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.95em");
+          container.querySelectorAll(".location div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.95em");
+          container.querySelectorAll(".date-and-time div").forEach(el => el.style.fontSize = "0.90em"); // shrink more to account for the bullets, which can't be shrunk nicely (I tried)
           container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.92em");
           
           // Sometimes the .description contains paragraphs, other times it doesn't (depending on markdown formatting).
