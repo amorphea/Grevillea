@@ -113,10 +113,10 @@ const calendarButtonsComponent = {
       // write EXIF metadata to embed copyright/etc info inside the downloaded imagew
       let zeroth = {};
       let exif = {};
-      zeroth[piexif.ImageIFD.Copyright] = "Background image credit: " + this.imageCopyrightInfo.copyright?.replace(/[^!-~ -]+/ug, '-'); // EXIF format: only printable ascii characters are allowed
-      zeroth[piexif.ImageIFD.Artist] = this.imageCopyrightInfo.author?.replace(/[^!-~ -]+/ug, '-'); // EXIF format: only printable ascii characters are allowed
+      zeroth[piexif.ImageIFD.Copyright] = "Background image credit: " + this.imageCopyrightInfo?.copyright?.replace(/[^!-~ -]+/ug, '-'); // EXIF format: only printable ascii characters are allowed
+      zeroth[piexif.ImageIFD.Artist] = this.imageCopyrightInfo?.author?.replace(/[^!-~ -]+/ug, '-'); // EXIF format: only printable ascii characters are allowed
       zeroth[piexif.ImageIFD.Software] = "Grevillea v" + $grevillea_version.value;
-      zeroth[piexif.ImageIFD.DocumentName] = this.event.title.replace(/[^0-9a-zA-Z-]+/ug, '-').substring(0, 100); // only ascii letters, numbers, and hyphens are allowed
+      zeroth[piexif.ImageIFD.DocumentName] = this.event.title?.replace(/[^0-9a-zA-Z-]+/ug, '-').substring(0, 100); // only ascii letters, numbers, and hyphens are allowed
       exif[piexif.ExifIFD.UserComment] = this.encodeUnicodeStringForExif(userComment); // all unicode characters are allowed (but must first be specially-encoded)
       let exifObj = { "0th": zeroth, "Exif": exif };
       let exifStr = piexif.dump(exifObj);
