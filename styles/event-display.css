@@ -117,16 +117,12 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 	border-radius: 1em;
 	width: 0.3em;
 	height: 0.3em;
-	/*left: calc(var(--date-and-time-spacing-override, 1.4em) * -0.5 + -0.15em);*/
 	left: calc(-0.7em + -0.15em);
 	/* vertically center the bullet */
 	margin-top: auto;
 	margin-bottom: auto;
 	top: 50%;
 	bottom: 50%;
-}
-.event-square-inner .date-and-time.jpeg-export .bullet-before:before {
-	left: calc(0em + -0.15em) !important;
 }
 .event-square-inner .timezone {
 	font-size: 0.8em;
