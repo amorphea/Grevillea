@@ -135,8 +135,15 @@ const calendarButtonsComponent = {
           if (!container) return;
           
           container.querySelectorAll(".location div, .rsvp div").forEach(el => el.style.fontSize = "0.95em");
-          container.querySelectorAll(".date-and-time div").forEach(el => el.style.fontSize = "0.90em"); // shrink more to account for the bullets, which can't be shrunk nicely (I tried)
           container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.92em");
+          
+          // The date-and-time section contains bullets, with spacing around them, which we'd like to shrink to
+          // avoid text wrapping. Unfortuately, there appears to be no way to re-center the bullets after reducing
+          // the spacing. They're psuedo-elements, so we can't use the html 'style' attribute, and for some reason
+          // css variables and classes on parent elements don't seem to work during the JPEG export. Instead, we
+          // shrink the spacing a tiny bit, and shrink the font size more than usual.
+          container.querySelectorAll(".date-and-time").forEach(el => { el.style["column-gap"] = "1.2em"; });
+          container.querySelectorAll(".date-and-time div").forEach(el => el.style.fontSize = "0.90em");
           
           // Sometimes the .description contains paragraphs, other times it doesn't (depending on markdown formatting).
           // This means the div might look like e.g. <div><p>foo</p><p>bar</p><div> or like <div>foo<b>bar</b></div>, with
