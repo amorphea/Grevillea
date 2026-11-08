@@ -134,34 +134,16 @@ const calendarButtonsComponent = {
           let container = ctx.clone.getElementsByClassName("event-square-inner")[0];
           if (!container) return;
           
-          // // Sometimes the .description contains paragraphs, other times it doesn't (depending on markdown formatting)
-          // // Shrinking the font size only works on paragraphs here for some reason, so if there's no paragraphs, we make one
-          // let descDiv = container.querySelector(".description > div");
-          // let ps = descDiv.querySelectorAll("p");
-          // if (ps.length === 0) {
-          //   let children = Array.from(descDiv.childNodes);
-          //   let newp = document.createElement("p");
-          //   descDiv.appendChild(newp);
-          //   children.forEach(child => newp.appendChild(child));
-          // };
-          
-          container.querySelectorAll(".location div, .date-and-time div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.6em");
+          container.querySelectorAll(".location div, .date-and-time div, .rsvp div, .description p").forEach(el => el.style.fontSize = "0.95em");
           container.querySelectorAll(".title h1").forEach(el => el.style.fontSize = "1.92em");
           
-          // let paragraphs = container.querySelectorAll(".description div p"); // sometimes the .description div has p elements inside, other times it doesn't
-          // if (paragraphs.length === 0) {
-          //   
-          // }
-          // let descriptionElements = paragraphs.length > 0 ? paragraphs : container.querySelectorAll(".description div");
-          // descriptionElements.forEach(el => el.style.fontSize = "0.6em");
-          
-          container.querySelectorAll(".description > div").forEach(el => el.style.fontSize = "0.6em");
+          // Sometimes the .description contains paragraphs, other times it doesn't (depending on markdown formatting).
+          // This means the div might look like e.g. <div><p>foo</p><p>bar</p><div> or like <div>foo<b>bar</b></div>, with
+          // a mix of nested elements and plain text fragments.
+          // Changing the font size of the div changes the size of any plain text fragments which are direct children of that
+          // div, but doesn't change the size for nested elements (for some reason). We therefore change those separately.
+          container.querySelectorAll(".description > div").forEach(el => el.style.fontSize = "0.95em");
           container.querySelectorAll(".description > div *").forEach(el => el.style.fontSize = "1em");
-          
-          //ctx.clone.style.width = "1080px";
-          
-          document.body.appendChild(ctx.clone);
-          //throw "asdf";
           
           // Alternative option (untested):
           //
