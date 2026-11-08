@@ -145,7 +145,11 @@ const calendarButtonsComponent = {
           container.querySelectorAll(".description > div").forEach(el => el.style.fontSize = "0.95em");
           container.querySelectorAll(".description > div *").forEach(el => el.style.fontSize = "1em");
           
-          container.querySelectorAll(".date-and-time").forEach(el => el.style["column-gap"] = "0em");
+          //container.querySelectorAll(".date-and-time").forEach(el => { el.style["column-gap"] = "0em"; el.style.setProperty("--date-and-time-spacing-override", "5em"); });
+          container.querySelectorAll(".date-and-time").forEach(el => { el.style["column-gap"] = "0em"; el.classList.add("jpeg-export"); });
+          
+          //document.body.appendChild(ctx.clone);
+          //throw "asdf";
           
           // Alternative option (untested):
           //
