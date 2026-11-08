@@ -145,8 +145,6 @@ const calendarButtonsComponent = {
           container.querySelectorAll(".description > div").forEach(el => el.style.fontSize = "0.95em");
           container.querySelectorAll(".description > div *").forEach(el => el.style.fontSize = "1em");
           
-          container.querySelectorAll(".date-and-time").forEach(el => el.style["column-gap"] = "0em");
-          
           // Alternative option (untested):
           //
           // We could instead recursively loop through the DOM tree inside .event-square-inner
