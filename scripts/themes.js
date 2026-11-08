@@ -136,7 +136,7 @@ class ThemesDB {
     ThemesDB.#logEntry(109, '2026-01-01', 'snail-comic', ['images/001-045 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #FFFFFF; padding: 13% 5% 28% 5%;'], null),
     ThemesDB.#logEntry(110, '2026-01-01', 'snail-comic', ['images/001-046 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #90E2BE; padding: 13% 5% 28% 5%;'], null),
     ThemesDB.#logEntry(111, '2026-01-01', 'snail-comic', ['images/001-046 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #90E2BE; padding: 13% 5% 28% 5%; --theme-title-color: #5ec8f2; --theme-location-color: #a3fb82; --theme-datetime-color: #8db2aa; --theme-timezone-color: #a5dba1; --theme-rsvp-color: #85cbd3;'], null),
-    ThemesDB.#logEntry(112, '2026-01-01', 'snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: transparent; padding: 13% 5% 28% 5%; --theme-gradient-default-color: #FF1C7A; --theme-gradient: linear-gradient(in hsl 125deg, #FF7C51 0%, #FF7C51 10%, #2286E8 10%, #2286E8 20%, #FF1C7A 20%, #FF1C7A 30%, #B2E559 30%, #B2E559 40%, #FF7C51 40%, #FF7C51 50%, #2286E8 50%, #2286E8 60%, #FF1C7A 60%, #FF1C7A 70%, #B2E559 70%, #B2E559 80%, #FF7C51 80%, #FF7C51 90%, #2286E8 90%, #2286E8 100%);'], null),
+    ThemesDB.#logEntry(112, '2026-01-01', 'snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #B4EC3E; padding: 13% 5% 28% 5%; --theme-title-color: #FA8D35; --theme-location-color: #fe1c7b; --theme-datetime-color: #2184e3; --theme-timezone-color: #FA8D35; --theme-rsvp-color: #fe1c7b;'], null),
     ThemesDB.#logEntry(113, '2026-01-01', 'snail-comic', ['images/001-047 snail-2026 CC-BY-SA-4.0 1080.jpg', '--theme-color: #FFFFFF; padding: 13% 5% 28% 5%;'], null),
     // Next number: 121
   ];

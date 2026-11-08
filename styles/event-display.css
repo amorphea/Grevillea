@@ -73,8 +73,6 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 	padding: 3%;
 	color: var(--theme-color);
 	text-shadow: var(--theme-shadow);
-	background-image: var(--theme-gradient, initial);
-	background-clip: text;
 }
 .event-square-inner > * {
 	display: flex;
@@ -112,7 +110,7 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 .event-square-inner .date-and-time .bullet-before:before {
 	content: "";
 	position: absolute;
-	background-color: var(--theme-gradient-default-color, var(--theme-datetime-color, var(--theme-metadata-color, var(--theme-color))));
+	background-color: var(--theme-datetime-color, var(--theme-metadata-color, var(--theme-color)));
 	box-shadow: var(--theme-shadow);
 	border-radius: 1em;
 	width: 0.3em;
@@ -140,7 +138,7 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 }
 .event-square-inner a {
 	color: inherit;
-	border-bottom: 1px solid var(--theme-gradient-default-color, var(--theme-description-color, var(--theme-metadata-color, var(--theme-color))));
+	border-bottom: 1px solid var(--theme-description-color, var(--theme-metadata-color, var(--theme-color)));
 	padding-bottom: 1px; /* when a <code> block is used inside a link, this makes them display more nicely together */
 }
 .event-square-inner a:visited {
@@ -148,34 +146,17 @@ along with Grevillea. If not, see <https://www.gnu.org/licenses/>.
 }
 .event-square-inner a:hover {
 	color: inherit;
-	border-bottom: 2px solid var(--theme-gradient-default-color, var(--theme-description-color, var(--theme-metadata-color, var(--theme-color))));
+	border-bottom: 2px solid var(--theme-description-color, var(--theme-metadata-color, var(--theme-color)));
 }
 .event-square-inner code {
 	background-color: rgba(170, 170, 170, 0.4);
 	padding: 0.2em 0.5em 0.2em 0.5em;
-	color: var(--theme-gradient-default-color, inherit);
+	color: inherit;
 	border-radius: 3px;
 	font-family: 'Courier Prime', 'Courier New', monospace;
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 	backdrop-filter: blur(10px) contrast(1.3) saturate(2);
-	
-	/* When a code span is used in a theme that specifies a --theme-gradient, then by default,
-	 * the span's background takes on the colours of the gradient, and the text is invisible!
-	 * This is no good. To fix this, we add the --theme-gradient-default-color to the color
-	 * property above (falling back on the inherited colour in all other cases), and add a
-	 * background image here to hide the gradient colours. The background here is itself a
-	 * *new* gradient, though it just has the same colour repeated twice. The colour is a
-	 * shade of grey, either 30% luminosity or 80% luminosity, and the calculations here
-	 * choose whichever one contrasts best with the --theme-gradient-default-color.
-	 * Whenever --theme-gradient-default-color is unset, the background here defaults to
-	 * 'transparent' (i.e. just use the backdrop-filter above), and the color above defaults
-	 * to 'inherit'.
-	 */
-	background-image: linear-gradient(
-		hsl(from var(--theme-gradient-default-color, transparent) h 0 calc(min(1, sign(40 - l) + 1) * (80 - 30) + 30)),
-		hsl(from var(--theme-gradient-default-color, transparent) h 0 calc(min(1, sign(40 - l) + 1) * (80 - 30) + 30))
-	);
 }
 
 .section-image-credit {
